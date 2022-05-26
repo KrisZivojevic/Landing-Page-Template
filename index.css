@@ -1,0 +1,101 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Oswald', Courier, monospace;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 26px;
+}
+h4 {
+  font-size: 22px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 18px;
+}
+p {
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+ul, ol {
+  list-style: none;
+}
+footer, section, nav, header {
+  display: block;
+}
+nav {
+  position: fixed;
+}
+header {
+  height: 100px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  position: fixed;
+  /* border-bottom: 2px solid black; */
+  -webkit-box-shadow: 2px 10px 21px -12px rgba(0,0,0,0.57); 
+  box-shadow: 2px 10px 21px -12px rgba(0,0,0,0.57);
+  background-color: #ddd;
+}
+.container {
+  height: 1000px;
+  width: 100%;
+}
+.d-inline {
+  display: inline-block;
+}
+.right {
+  text-align: right;
+  justify-content: space-between;
+  position: relative;
+  bottom: 30px;
+  left: 300px;
+}
+.ul-nav {
+  margin-top: 36px;
+  margin-bottom: 74px;
+}
+.nav-link {
+  padding: 5px 15px;
+  text-decoration: none;
+  color: #29293a;
+  transition: .25s;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  margin-left: 20px;
+}
+.nav-link:hover, .nav-link:active {
+  color: #1ab785;
+}
+.my-20 {
+  margin: 20px 0px;
+}
+.my-50 {
+  margin-top: 50px;
+}
+.mx-200 {
+  margin-right: 200px;
+}
+
+.img-logo {
+  position: relative;
+  left: 40px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-column-gap: 10px;
+}
