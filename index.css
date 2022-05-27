@@ -14,6 +14,7 @@ h2 {
 }
 h3 {
   font-size: 26px;
+  font-weight: 100;
 }
 h4 {
   font-size: 22px;
@@ -46,9 +47,15 @@ header {
   font-weight: 300;
   position: fixed;
   /* border-bottom: 2px solid black; */
-  -webkit-box-shadow: 2px 10px 21px -12px rgba(0,0,0,0.57); 
-  box-shadow: 2px 10px 21px -12px rgba(0,0,0,0.57);
-  background-color: #ddd;
+  /* -webkit-box-shadow: 2px 10px 21px -12px rgba(0,0,0,0.57);  */
+  /* box-shadow: 2px 10px 21px -12px rgba(0,0,0,0.57); */
+  background-color: #fff;
+}
+.header-logo {
+  background-image: url(logo.png);
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .container {
   height: 1000px;
@@ -89,13 +96,32 @@ header {
 .mx-200 {
   margin-right: 200px;
 }
-
-.img-logo {
-  position: relative;
-  left: 40px;
-}
 .grid {
   display: grid;
   grid-template-columns: 20% 80%;
   grid-column-gap: 10px;
 }
+.banner-image {
+  background-image: url(marketing.jpg);
+  height: 660px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.center {
+  text-align: center;
+}
+.services {
+  display: block;
+  font-family: 'Work Sans';
+  width: 100%;
+  margin: 20px auto;
+}
+.max-w {
+  max-width: 730px;
+}
+.content-width {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
