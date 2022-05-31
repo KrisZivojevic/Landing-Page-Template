@@ -18,6 +18,7 @@ h3 {
 }
 h4 {
   font-size: 22px;
+  font-weight: 100;
 }
 h5 {
   font-size: 20px;
@@ -96,6 +97,9 @@ header {
 .mx-200 {
   margin-right: 200px;
 }
+.mb-20 {
+  margin-bottom: 20px;
+}
 .grid {
   display: grid;
   grid-template-columns: 20% 80%;
@@ -114,6 +118,7 @@ header {
 .services {
   display: block;
   font-family: 'Work Sans';
+  color: #74757f;
   width: 100%;
   margin: 20px auto;
 }
@@ -123,5 +128,17 @@ header {
 .content-width {
   max-width: 1170px;
   margin: 0 auto;
+}
+.grid-services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 50px;
+}
+.text-left {
+  text-align: left;
+}
+.i-style {
+  color: #1ab785;
+  font-size: 25px;
 }
 
