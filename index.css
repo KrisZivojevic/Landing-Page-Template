@@ -53,10 +53,10 @@ header {
   font-size: 14px;
   font-weight: 300;
   position: fixed;
-  /* border-bottom: 2px solid black; */
-  /* -webkit-box-shadow: 2px 10px 21px -12px rgba(0,0,0,0.57);  */
-  /* box-shadow: 2px 10px 21px -12px rgba(0,0,0,0.57); */
+  border-bottom: .01px solid #d8d8d8;
   background-color: #fff;
+  box-shadow: -webkit-box-shadow: 0px 11px 11px -5px rgba(0,0,0,0.72); 
+  box-shadow: 0px 11px 11px -5px rgba(0,0,0,0.15);
 }
 .header-logo {
   background-image: url(logo.png);
@@ -131,9 +131,8 @@ header {
   width: 100%;
   margin: 20px auto;
 }
-.h3-services {
+.h3-style {
   font-family: 'Work Sans';
-  margin-top: 20px;
   color: #29293a;
 }
 .max-w {
@@ -153,6 +152,12 @@ header {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 100px;
 }
+.grid-team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  grid-template-rows: 370px;
+}
 .img-about-us {
   background-image: url(about.jpg);
   height: 368px;
@@ -160,6 +165,52 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.img-team-person1 {
+  /* width: 270px;
+  height: 350px;*/
+  margin: 10px auto;
+  background-image: url(person1.jpg);
+  height: 350px;
+  width: 270px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.img-team-person2 {
+  /* width: 270px;
+  height: 350px;*/
+  margin: 10px auto;
+  background-image: url(person2.jpg);
+  height: 350px;
+  width: 270px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.img-team-person3 {
+  /* width: 270px;
+  height: 350px;*/
+  margin: 10px auto;
+  background-image: url(person3.jpg);
+  height: 350px;
+  width: 270px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.text-bottom-left {
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.645);
+  
+  color: #29293a;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: 'Oswald';
 }
 .bg-about-us {
   background-color: #f5f6fa;
@@ -185,6 +236,7 @@ header {
   transition: .25s;
   background-color: #16986f;
   color: #29293a;
+  cursor: pointer;
 }
 .text-left {
   text-align: left;
