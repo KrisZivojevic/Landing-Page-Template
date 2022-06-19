@@ -44,6 +44,7 @@ ul, ol {
 footer, section, nav, header {
   display: block;
 }
+/* HEADER STYLES */
 nav {
   position: fixed;
 }
@@ -61,7 +62,6 @@ header {
 }
 .header-logo {
   background-image: url(logo.png);
-  height: 100px;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -72,16 +72,17 @@ header {
 .d-inline {
   display: inline-block;
 }
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
 .right {
   text-align: right;
   justify-content: space-between;
   position: relative;
   bottom: 30px;
   left: 300px;
-}
-.ul-nav {
-  margin-top: 36px;
-  margin-bottom: 74px;
 }
 .nav-link {
   padding: 5px 15px;
@@ -98,6 +99,7 @@ header {
 .bars-icon {
   display: none;
 }
+/* GLOBAL CLASSES */
 .my-20 {
   margin: 20px 0px;
 }
@@ -128,10 +130,12 @@ header {
 .padding-y-50 {
   padding: 50px 0px;
 }
+/* @TODO refactor to flexbox */
 .grid {
   display: grid;
   grid-template-columns: 20% 80%;
   grid-column-gap: 10px;
+  height: 100px;
 }
 .banner-image {
   background-image: url(marketing.jpg);
@@ -323,5 +327,16 @@ header {
   font-weight: 1000;
   font-family: 'Work Sans';
   transition: .25s;
+}
+
+@media only screen and (max-width: 600px) {
+  .bars-icon {
+    display: inline;
+    margin: auto;
+    font-size: 30px;
+  }
+  .sm-d-none {
+    display: none;
+  }
 }
 
