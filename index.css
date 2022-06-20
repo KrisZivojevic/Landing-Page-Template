@@ -178,8 +178,9 @@ header {
 .grid-team {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
   grid-template-rows: 370px;
+  place-items: center;
+  padding: 20px;
 }
 .grid-testimonials {
   display: grid;
@@ -203,6 +204,48 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.grid-team img {
+  width: 300px;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.grid-team figure {
+  position: relative;
+}
+.grid-team figure::before {
+  content: "";
+  background-color: rgb(41, 41, 58);
+  opacity: 0;
+  transition: .5s;
+  width: 100%;
+  height: 330px;
+  border-radius: 10px;
+  position: absolute;
+}
+.grid-team figcaption {
+  position: absolute;
+  color: #fff;
+  opacity: 0;
+}
+.team-member-name {
+  bottom: 20%;
+  left: 10%;
+  font-size: 20px;
+  font-family: 'Work Sans';
+}
+.position-title {
+  bottom: 10%;
+  left: 10%;
+  font-size: 16px;
+  font-family: 'Work Sans';
+}
+.grid-team figure:hover::before {
+  opacity: 0.5;
+}
+.grid-team figure:hover figcaption {
+  opacity: 1;
 }
 .img-team-person1 {
   /* width: 270px;
@@ -337,10 +380,10 @@ header {
   height: 200px;
   object-fit: cover;
 }
-figure {
+.grid-laptop figure {
   position: relative;
 }
-figure::before {
+.grid-laptop figure::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -351,7 +394,7 @@ figure::before {
   opacity: 0;
   transition: .5s;
 }
-figcaption {
+.grid-laptop figcaption {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -360,10 +403,10 @@ figcaption {
   font-size: 50px;
   opacity: 0;
 }
-figure:hover::before {
+.grid-laptop figure:hover::before {
   opacity: 0.341;
 }
-figure:hover figcaption { /*ako je parent hoverovan, stil ce se primeniti na potomka*/
+.grid-laptop figure:hover figcaption { /*ako je parent hoverovan, stil ce se primeniti na potomka*/
   opacity: 1;
 }
 
