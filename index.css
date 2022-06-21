@@ -342,6 +342,15 @@ header {
   padding: 50px 0px;
   background-image: linear-gradient(to right, #21dba0, #0b4734);
 }
+.branding {
+  padding: 80px 0px;
+  background-image: linear-gradient(to right, #21dba0, #0b4734);
+}
+.branding h3 {
+  font-size: 36px;
+  font-family: 'Work Sans';
+  color: #fff;
+}
 .iframe {
   margin: 0px auto;
 }
@@ -374,7 +383,7 @@ header {
 .grid-laptop {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  padding-bottom: 500px;
+  padding-bottom: 10px;
 }
 .grid-laptop img { /*svaki img unutar ove klase (ne samo direktan child)*/
   height: 200px;
@@ -408,6 +417,74 @@ header {
 }
 .grid-laptop figure:hover figcaption { /*ako je parent hoverovan, stil ce se primeniti na potomka*/
   opacity: 1;
+}
+.firstname {
+  grid-area: firstname;
+}
+.lastname {
+  grid-area: lastname;
+}
+.email {
+  grid-area: email;
+}
+.phone {
+  grid-area: phone;
+}
+.message {
+  grid-area: message;
+}
+.firstname-input {
+  grid-area: firstname-input;
+}
+.lastname-input {
+  grid-area: lastname-input;
+}
+.email-input {
+  grid-area: email-input;
+}
+.phone-input {
+  grid-area: phone-input;
+}
+.message-textarea {
+  grid-area: message-textarea;
+}
+.grid-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 
+  "firstname lastname"
+  "firstname-input lastname-input"
+  "email phone"
+  "email-input phone-input"
+  "message none"
+  "message-textarea message-textarea";
+  gap: 10px;
+  padding: 50px;
+}
+.grid-contactus {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+}
+.grid-contactus img {
+  object-fit: cover;
+  height: 500px;
+}
+.form-title {
+  padding-left: 50px;
+  padding-top: 20px;
+}
+.grid-form input, textarea {
+  min-height: 48px;
+  border-radius: 6px;
+  border: solid 1px #c5c6cd;
+}
+.grid-form label {
+  font-style: 'Work Sans';
+  font-size: 16px;
+  color: #a6a6a6;
+  cursor: pointer;
+  letter-spacing: 1px;
 }
 
 
