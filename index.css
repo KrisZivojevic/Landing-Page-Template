@@ -106,6 +106,9 @@ header {
 .my-10 {
   margin: 30px 0px;
 }
+.my-50 {
+  margin: 50px 0px;
+}
 .mt-50 {
   margin-top: 50px;
 }
@@ -459,7 +462,7 @@ header {
   "message none"
   "message-textarea message-textarea";
   gap: 10px;
-  padding: 50px;
+  padding: 30px 50px;
 }
 .grid-contactus {
   display: grid;
@@ -473,11 +476,15 @@ header {
 .form-title {
   padding-left: 50px;
   padding-top: 20px;
+  font-family: 'Work Sans';
+  font-size: 26px;
+  color: #29293a;
 }
 .grid-form input, textarea {
   min-height: 48px;
   border-radius: 6px;
   border: solid 1px #c5c6cd;
+  padding: 10px;
 }
 .grid-form label {
   font-style: 'Work Sans';
@@ -485,6 +492,22 @@ header {
   color: #a6a6a6;
   cursor: pointer;
   letter-spacing: 1px;
+  line-height: 16px;
+}
+.input-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.error-msg {
+  font-size: 10px;
+  font-family: 'Work Sans';
+  font-weight: 500;
+  color: #ff0000;
+  opacity: 0;
+}
+.ml-50 {
+  margin-left: 50px;
 }
 
 
