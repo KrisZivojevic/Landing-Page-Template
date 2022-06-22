@@ -285,39 +285,41 @@
         <h3 class="d-inline mr-50">We Offer Quality <b>Branding and Promotion</b></h3>
         <button type="button" class="btn d-inline">Free Consultation</button>
       </section>
-      <section class="grid-contactus my-20">
-        <form>
-          <p class="form-title">Contact Us</p>
-          <div class="grid-form">
-            <div class="input-text">
-              <label class="firstname" for="firstname">First Name</label>
-              <small class="error-msg" id="firstname-error">The text field is required.</small>
+      <section class="bg-form-location">
+        <div class="grid-contactus content-width">
+          <form>
+            <p class="form-title">Contact Us</p>
+            <div class="grid-form">
+              <div class="input-text">
+                <label class="firstname" for="firstname">First Name</label>
+                <small class="error-msg" id="firstname-error">The text field is required.</small>
+              </div>
+              <input type="text" id="firstname" onblur="onError('firstname', 'firstname-error')" name="firstname" class="firstname-input">
+              <div class="input-text">
+                <label class="lastname" for="lastname">Last Name</label>
+                <small class="error-msg" id="lastname-error">The text field is required.</small>
+              </div>
+              <input type="text" id="lastname" onblur="onError('lastname', 'lastname-error')" name="lastname" class="lastname-input">
+              <div class="input-text">
+                <label class="email" for="email">E-mail</label>
+                <small class="error-msg" id="email-error">The text field is required.</small>
+              </div>
+              <input type="email" id="email" onblur="onError('email', 'email-error')" name="email" class="email-input">
+              <div class="input-text">
+                <label class="phone" for="phone">Phone</label>
+                <small class="error-msg" id="phone-error">The text field is required.</small>
+              </div>
+              <input type="tel" id="phone" onblur="onError('phone', 'phone-error')" name="phone" class="phone-input">
+              <div class="input-text">
+                <label class="message" for="message">Your Message</label>
+                <small class="error-msg" id="message-error">The text field is required.</small>
+              </div>
+              <textarea id="message" onblur="onError('message', 'message-error')" name="message" rows="5" cols="50" class="message-textarea"></textarea>
             </div>
-            <input type="text" id="firstname" onblur="onError('firstname', 'firstname-error')" name="firstname" class="firstname-input">
-            <div class="input-text">
-              <label class="lastname" for="lastname">Last Name</label>
-              <small class="error-msg" id="lastname-error">The text field is required.</small>
-            </div>
-            <input type="text" id="lastname" onblur="onError('lastname', 'lastname-error')" name="lastname" class="lastname-input">
-            <div class="input-text">
-              <label class="email" for="email">E-mail</label>
-              <small class="error-msg" id="email-error">The text field is required.</small>
-            </div>
-            <input type="email" id="email" onblur="onError('email', 'email-error')" name="email" class="email-input">
-            <div class="input-text">
-              <label class="phone" for="phone">Phone</label>
-              <small class="error-msg" id="phone-error">The text field is required.</small>
-            </div>
-            <input type="tel" id="phone" onblur="onError('phone', 'phone-error')" name="phone" class="phone-input">
-            <div class="input-text">
-              <label class="message" for="message">Your Message</label>
-              <small class="error-msg" id="message-error">The text field is required.</small>
-            </div>
-            <textarea id="message" onblur="onError('message', 'message-error')" name="message" rows="5" cols="50" class="message-textarea"></textarea>
-          </div>
-            <button type="button" class="btn ml-50">Send Message</button>
-        </form>
-        <img src="location.jpg" alt="laptop" width="100%">
+              <button type="button" class="btn">Send Message</button>
+          </form>
+          <img src="location.jpg" alt="laptop" width="100%">
+        </div>
       </section>
       <section class="grid-laptop">
         <figure>
