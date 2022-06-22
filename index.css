@@ -389,7 +389,6 @@ header {
 .grid-laptop {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  padding-bottom: 10px;
 }
 .grid-laptop img { /*svaki img unutar ove klase (ne samo direktan child)*/
   height: 200px;
@@ -508,6 +507,54 @@ header {
   font-weight: 500;
   color: #ff0000;
   opacity: 0;
+}
+footer {
+  background-color: #29293a;
+  padding: 90px 0px;
+}
+.grid-footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 100px;
+}
+.grid-quick-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 15px;
+  column-gap: 30px;
+}
+.grid-quick-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Work Sans';
+  transition: .5s;
+}
+.grid-footer ul a {
+  text-decoration: none;
+  color: #aeb1be;
+  font-size: 16px;
+  font-family: 'Work Sans';
+  transition: .5s;
+}
+.grid-quick-links a:hover {
+  color: #aeb1be;
+}
+.grid-footer ul a:hover {
+  color: #fff;
+}
+footer h3 {
+  color: #aeb1be;
+  font-size: 24px;
+}
+footer hr {
+  margin: 15px 0px 30px;
+  border: #aeb1be solid .5px;
+  opacity: .5;
+}
+footer i {
+  color: #fff;
+  padding: 8px;
 }
 
 
