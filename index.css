@@ -103,7 +103,7 @@ header {
 .my-20 {
   margin: 20px 0px;
 }
-.my-10 {
+.my-30 {
   margin: 30px 0px;
 }
 .my-50 {
@@ -117,6 +117,9 @@ header {
 }
 .mt-10 {
   margin-top: 10px;
+}
+.mt-14 {
+  margin-top: 14px;
 }
 .mx-200 {
   margin-right: 200px;
@@ -510,7 +513,8 @@ header {
 }
 footer {
   background-color: #29293a;
-  padding: 90px 0px;
+  padding: 90px 0px 50px;
+  font-family: 'Work Sans';
 }
 .grid-footer {
   display: grid;
@@ -527,7 +531,6 @@ footer {
   text-decoration: none;
   color: #fff;
   font-size: 16px;
-  font-family: 'Work Sans';
   transition: .5s;
 }
 .grid-footer ul a {
@@ -554,7 +557,19 @@ footer hr {
 }
 footer i {
   color: #fff;
-  padding: 8px;
+}
+footer p {
+  color: #aeb1be;
+}
+footer li {
+  position: relative;
+}
+footer li > .icon {
+  position: absolute;
+}
+footer li a {
+  display: block;
+  margin-left: 35px;
 }
 
 
