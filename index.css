@@ -64,6 +64,8 @@ header {
   background-image: url(logo.png);
   background-position: center;
   background-repeat: no-repeat;
+  width: 190px;
+  height: 40px;
 }
 .container {
   height: 1000px;
@@ -72,6 +74,7 @@ header {
 .d-inline {
   display: inline-block;
 }
+/* This class is not used yet */
 .vertical-center {
   position: relative;
   top: 50%;
@@ -137,11 +140,17 @@ header {
   padding: 50px 0px;
 }
 /* @TODO refactor to flexbox */
-.grid {
+/* .grid {
   display: grid;
   grid-template-columns: 20% 80%;
   grid-column-gap: 10px;
   height: 100px;
+} */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
 }
 .banner-image {
   background-image: url(marketing.jpg);
