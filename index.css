@@ -101,7 +101,80 @@ header {
 }
 .bars-icon {
   display: none;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  z-index: 1;
 }
+.bars-icon input {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 2;
+}
+#menu input:checked ~ span:nth-last-child(4) {
+  transform: rotate(45deg) translate(0px, -10px) scale(1.3, 1.3);
+}
+#menu input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#menu input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(-5px, 12px) scale(1.3, 1.3);
+}
+.bars-icon span {
+  position: absolute;
+  width: 40px;
+  height: 6px;
+  background-color: #29293a;
+  transition: all .2s ease-in;
+  opacity: 1;
+}
+.bars-icon span:first-child {
+  top: 0;
+}
+.bars-icon span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.bars-icon span:nth-child(3) {
+  bottom: 0;
+}
+.nav-mobile {
+  min-width: 270px;
+  background-color: #fff;
+  position: absolute;
+  left: -40px;
+  top: 69px;
+  opacity: 0;
+  transform: translateX(-101%);
+  transition: all 0.3s ease-in-out;
+}
+.nav-mobile li {
+  padding: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.nav-mobile li:hover {
+  background-color: #16986f;
+}
+.nav-mobile li:hover a {
+  color: #f5f6fa;
+}
+.nav-mobile a {
+  color: #29293a;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+#menu input:checked ~ ul {
+  opacity: 1;
+  transform: translateX(0); /*or transform: none*/
+}
+
 /* GLOBAL CLASSES */
 .my-20 {
   margin: 20px 0px;
@@ -148,7 +221,7 @@ header {
 } */
 .flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 100px;
   align-items: center;
 }
@@ -583,14 +656,29 @@ footer li a {
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 850px) {
   .bars-icon {
-    display: inline;
-    margin: auto;
     font-size: 30px;
+    display: block;
   }
   .sm-d-none {
     display: none;
   }
+  header > .content-width {
+    margin: 0 40px;
+  }
 }
+
+@media only screen and (max-width: 1060px) {
+  .nav-link {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .nav-link {
+    padding: 5px 10px;
+  }
+}
+
 
