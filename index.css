@@ -392,9 +392,10 @@ header {
   border-radius: 5px;
 }
 .img-testimonials {
-  width: 76px;
+  width: 70px;
   height: 70px;
   border-radius: 50%;
+  object-fit: cover;
 }
 .text-bottom-left {
   padding: 5px 10px;
