@@ -61,7 +61,7 @@ header {
   z-index: 1;
 }
 .header-logo {
-  background-image: url(logo.png);
+  background-image: url(/assets/logo.png);
   background-position: center;
   background-repeat: no-repeat;
   width: 190px;
@@ -234,7 +234,7 @@ header {
   align-items: center;
 }
 .banner-image {
-  background-image: url(marketing.jpg);
+  background-image: url(/assets/marketing.jpg);
   height: 660px;
   background-position: center;
   background-repeat: no-repeat;
@@ -303,7 +303,7 @@ header {
   text-align: center;
 }
 .img-about-us {
-  background-image: url(about.jpg);
+  background-image: url(/assets/about.jpg);
   height: 368px;
   width: 570px;
   background-position: center;
@@ -356,7 +356,7 @@ header {
   /* width: 270px;
   height: 350px;*/
   margin: 10px auto;
-  background-image: url(person1.jpg);
+  background-image: url(/assets/person1.jpg);
   height: 350px;
   width: 270px;
   background-position: center;
@@ -369,7 +369,7 @@ header {
   /* width: 270px;
   height: 350px;*/
   margin: 10px auto;
-  background-image: url(person2.jpg);
+  background-image: url(/assets/person2.jpg);
   height: 350px;
   width: 270px;
   background-position: center;
@@ -382,7 +382,7 @@ header {
   /* width: 270px;
   height: 350px;*/
   margin: 10px auto;
-  background-image: url(person3.jpg);
+  background-image: url(/assets/person3.jpg);
   height: 350px;
   width: 270px;
   background-position: center;
