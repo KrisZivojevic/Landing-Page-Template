@@ -227,6 +227,34 @@ nav {
 #swiper input.bullet-02:checked ~ img, #swiper input.bullet-03:checked ~ img {
   opacity: 1;
 }
+.dot {
+  display: inline-block;
+  position: relative;
+  padding-top: 20px;
+  padding-right: 10px;
+}
+.dot input {
+  position: absolute;
+  opacity: 0;
+  left: 1%;
+  top: 67%;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+.dot span {
+  background-color: #74757f;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.3s;
+}
+.dot input:checked ~ span {
+  background-color: #16986f;
+  width: 15px;
+  height: 15px;
+}
 
 /* GLOBAL CLASSES */
 .my-20 {
