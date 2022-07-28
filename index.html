@@ -34,7 +34,7 @@
 
 <body>
   <div class="container">
-    <header>
+    <header class="header">
       <!-- <nav class="center"> -->
       <!-- <img src="logo.png" class="d-inline img-logo showTagBox left ml-20"> -->
       <div class="flex content-width">
@@ -74,6 +74,24 @@
     </header>
     <main>
       <div id="home" class="banner-image"></div>
+
+      <div id="swiper" class="swiper-bullet">
+        <div class="bullet">
+          <input type="radio" name="bullet" class="bullet-01" checked>
+          <span>01</span>
+        </div>
+        <div class="bullet">
+          <input type="radio" name="bullet" class="bullet-02">
+          <span>02</span>
+          <img src="/assets/laptop1.jpg" alt="laptop">
+        </div>
+        <div class="bullet">
+          <input type="radio" name="bullet" class="bullet-03">
+          <span>03</span>
+          <img src="/assets/laptop2.jpg" alt="laptop">
+        </div>
+      </div>
+
       <div id="services">
         <h3 class="h3-style center mt-50">
           Our Services
@@ -167,10 +185,10 @@
         <button type="button" class="btn d-inline">View All Pricing</button>
       </section>
       <section id="team" class="center mb-50">
-        <h3 class="h3-style center mt-50">
+        <h3 class="h3-style center my-80">
           Who We Are
         </h3>
-        <div class="flex-team my-20 content-width">
+        <div class="flex-team my-20 pb-20 content-width">
           <figure>
             <img src="/assets/person1.jpg" alt="avatar" width="100%">
             <figcaption class="team-member-name">Jean Thompson</figcaption>
@@ -208,7 +226,7 @@
         <button type="button" class="btn d-inline">View All Team</button>
       </section>
       <section id="testimonials" class="bg-testimonials">
-        <h3 class="h3-style center my-30">Testimonials</h3>
+        <h3 class="h3-style center mb-80">Testimonials</h3>
         <div class="flex-testimonials content-width">
           <div class="testimonials">
             <i class="fa fa-quote-left i-style"></i>
@@ -224,6 +242,19 @@
                 <p>CEO at Majestic</p>
               </div>
             </div>
+
+            <div class="dot">
+              <input type="radio" name="dot" checked>
+              <span></span>
+            </div>
+            <div class="dot">
+              <input type="radio" name="dot">
+              <span></span>
+            </div>
+            <div class="dot">
+              <input type="radio" name="dot">
+              <span></span>
+            </div>
           </div>
           <div class="iframe">
             <iframe width="460" height="315" src="https://www.youtube.com/embed/QZzbm-FrkGk"
@@ -233,16 +264,17 @@
           </div>
         </div>
       </section>
-      <div id="pricing">
-        <h3 class="h3-style center mt-50">
-          Pricing
-        </h3>
-        <p class="services center max-w">
-          In this section, you can learn more about available pricing plans and included services. Even if you own a small
-          business and don't need big marketing campaign, we have what to offer.
-        </p>
-      </div>
-      <section class="my-50">
+      
+      <section class="py-80">
+        <header id="pricing" class="mb-80">
+          <h3 class="h3-style center">
+            Pricing
+          </h3>
+          <p class="services center max-w">
+            In this section, you can learn more about available pricing plans and included services. Even if you own a small
+            business and don't need big marketing campaign, we have what to offer.
+          </p>
+        </header>
         <div class="flex-pricing content-width">
           <div class="border-pricing padding-y-50 padding-x-30">
             <i class="far fa-star i-style"></i>
@@ -254,7 +286,7 @@
               <p class="mt-10">1 Month</p>
               <p class="mb-20 mt-10">10 Additional Services</p>
             </div>
-            <h3 class="mb-20">&dollar; 789.00</h3>
+            <p class="mb-20 currency">&dollar; 789.00</p>
             <button type="button" class="btn">Order Service</button>
           </div>
           <div class="border-pricing padding-y-50 padding-x-30">
@@ -268,7 +300,7 @@
               <p class="mt-10">2 Months</p>
               <p class="mb-20 mt-10">20 Additional Services</p>
             </div>
-            <h3 class="mb-20">&dollar; 1299.00</h3>
+            <p class="mb-20 currency">&dollar; 1299.00</p>
             <button type="button" class="btn">Order Service</button>
           </div>
           <div class="border-pricing padding-y-50 padding-x-30">
@@ -283,7 +315,7 @@
               <p class="mt-10">3 Months</p>
               <p class="mb-20 mt-10">40 Additional Services</p>
             </div>
-            <h3 class="mb-20">&dollar; 2369.00</h3>
+            <p class="mb-20 currency">&dollar; 2369.00</p>
             <button type="button" class="btn">Order Service</button>
           </div>
           <div class="border-pricing padding-y-50 padding-x-30">
@@ -299,7 +331,7 @@
               <p class="mt-10">4 Months</p>
               <p class="mb-20 mt-10">60+ Additional Services</p>
             </div>
-            <h3 class="mb-20">&dollar; 6790.00</h3>
+            <p class="mb-20 currency">&dollar; 6790.00</p>
             <button type="button" class="btn">Order Service</button>
           </div>
         </div>
@@ -313,31 +345,41 @@
           <form>
             <p class="form-title">Contact Us</p>
             <div class="grid-form">
-              <div class="input-text">
-                <label class="firstname" for="firstname">First Name</label>
-                <small class="error-msg" id="firstname-error">The text field is required.</small>
+              <div class="firstname-input">
+                <div class="input-text">
+                  <label class="firstname" for="firstname">First Name</label>
+                  <small class="error-msg" id="firstname-error">The text field is required.</small>
+                </div>
+                <input type="text" id="firstname" onblur="onError('firstname', 'firstname-error')" name="firstname">
               </div>
-              <input type="text" id="firstname" onblur="onError('firstname', 'firstname-error')" name="firstname" class="firstname-input">
-              <div class="input-text">
-                <label class="lastname" for="lastname">Last Name</label>
-                <small class="error-msg" id="lastname-error">The text field is required.</small>
+              <div class="lastname-input">
+                <div class="input-text">
+                  <label class="lastname" for="lastname">Last Name</label>
+                  <small class="error-msg" id="lastname-error">The text field is required.</small>
+                </div>
+                <input type="text" id="lastname" onblur="onError('lastname', 'lastname-error')" name="lastname">
               </div>
-              <input type="text" id="lastname" onblur="onError('lastname', 'lastname-error')" name="lastname" class="lastname-input">
-              <div class="input-text">
-                <label class="email" for="email">E-mail</label>
-                <small class="error-msg" id="email-error">The text field is required.</small>
+              <div class="email-input">
+                <div class="input-text">
+                  <label class="email" for="email">E-mail</label>
+                  <small class="error-msg" id="email-error">The text field is required.</small>
+                </div>
+                <input type="email" id="email" onblur="onError('email', 'email-error')" name="email">
               </div>
-              <input type="email" id="email" onblur="onError('email', 'email-error')" name="email" class="email-input">
-              <div class="input-text">
-                <label class="phone" for="phone">Phone</label>
-                <small class="error-msg" id="phone-error">The text field is required.</small>
+              <div class="phone-input">
+                <div class="input-text">
+                  <label class="phone" for="phone">Phone</label>
+                  <small class="error-msg" id="phone-error">The text field is required.</small>
+                </div>
+                <input type="tel" id="phone" onblur="onError('phone', 'phone-error')" name="phone">
               </div>
-              <input type="tel" id="phone" onblur="onError('phone', 'phone-error')" name="phone" class="phone-input">
-              <div class="input-text">
-                <label class="message" for="message">Your Message</label>
-                <small class="error-msg" id="message-error">The text field is required.</small>
+              <div class="message-textarea">
+                <div class="input-text">
+                  <label class="message" for="message">Your Message</label>
+                  <small class="error-msg" id="message-error">The text field is required.</small>
+                </div>
+                <textarea id="message" onblur="onError('message', 'message-error')" name="message" rows="8" cols="50"></textarea>
               </div>
-              <textarea id="message" onblur="onError('message', 'message-error')" name="message" rows="5" cols="50" class="message-textarea"></textarea>
             </div>
               <button type="button" class="btn">Send Message</button>
           </form>
@@ -347,7 +389,7 @@
           </div>
         </div>
       </section>
-      <section class="grid-laptop">
+      <section class="flex-laptop">
         <figure>
           <img src="/assets/laptop1.jpg" alt="laptop1" width="100%">
           <figcaption>+</figcaption>
