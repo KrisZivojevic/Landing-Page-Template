@@ -210,7 +210,7 @@ nav {
   cursor: pointer;
 }
 .bullet img {
-  width: 1520px;
+  width: 100%;
   height: 600px;
   object-fit: cover;
   opacity: 0;
@@ -363,11 +363,13 @@ nav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 50px;
+  padding: 0 20px;
 }
 .flex-about-us {
   display: flex;
   justify-content: space-between;
   gap: 50px;
+  padding: 0 20px;
 }
 .flex-about-us article {
   flex-basis: 50%;
@@ -405,8 +407,6 @@ nav {
 }
 .img-about-us {
   background-image: url(/assets/about.jpg);
-  height: 368px;
-  width: 570px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -802,7 +802,6 @@ footer li a {
     grid-template-columns: repeat(3, 1fr);
     max-width: 720px;
     margin: 0 auto;
-    padding: 0 20px;
     grid-column-gap: 20px;
   }
   .nav-link {
@@ -811,6 +810,49 @@ footer li a {
   }
   .max-w {
     max-width: 690px;
+  }
+  /*About Us*/
+  .flex-about-us {
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .flex-about-us > div, .flex-about-us > article {
+    flex-basis: unset;
+  }
+  .flex-about-us article {
+    width: 570px;
+  }
+  .img-about-us {
+    height: 368px;
+    width: 570px;
+  }
+  /*Marketing*/
+  .marketing {
+    padding: 40px 0;
+  }
+  .marketing > .mr-50 {
+    margin-right: 0;
+  }
+  .marketing > button {
+    display: block;
+    margin: 30px auto 0;
+  }
+  /*Team*/
+  .flex-team {
+    flex-wrap: wrap;
+    justify-content: normal;
+  }
+  /* #team.content-width {
+    margin: 0 auto;
+  } */
+
+
+
+
+
+  .branding, .flex-laptop, #testimonials, #contact, #pricing, footer {
+    display: none;
   }
 }
 
@@ -822,6 +864,7 @@ footer li a {
     font-size: 30px;
     display: block;
   }
+  
 }
 
 
