@@ -306,6 +306,9 @@ nav {
 .pb-20 {
   padding-bottom: 20px;
 }
+.pb-80 {
+  padding-bottom: 80px;
+}
 .padding-y-50 {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -417,20 +420,20 @@ nav {
   object-fit: cover;
   border-radius: 10px;
 }
-.flex-team figure {
+.flex-team .figure {
   position: relative;
 }
-.flex-team figure::before {
+.flex-team .figure::before {
   content: "";
   background-color: rgb(41, 41, 58);
   opacity: 0;
   transition: .5s;
-  width: 100%;
+  width: 300px;
   height: 330px;
   border-radius: 10px;
   position: absolute;
 }
-.flex-team figcaption {
+.flex-team .figcaption {
   position: absolute;
   color: #fff;
   opacity: 0;
@@ -447,10 +450,10 @@ nav {
   font-size: 16px;
   font-family: 'Work Sans';
 }
-.flex-team figure:hover::before {
+.flex-team .figure:hover::before {
   opacity: 0.5;
 }
-.flex-team figure:hover figcaption {
+.flex-team .figure:hover .figcaption {
   opacity: 1;
 }
 .img-team-person1 {
@@ -842,6 +845,14 @@ footer li a {
   .flex-team {
     flex-wrap: wrap;
     justify-content: normal;
+    gap: unset;
+    margin: 0 auto;
+    max-width: 650px;
+  }
+  .flex-team .figure {
+    max-width: 50%;
+    flex: 0 0 50%;
+    padding: 15px;
   }
   /* #team.content-width {
     margin: 0 auto;
