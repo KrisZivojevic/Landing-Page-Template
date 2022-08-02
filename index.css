@@ -213,7 +213,7 @@ nav {
   width: 100%;
   height: 600px;
   object-fit: cover;
-  opacity: 0;
+  /* opacity: 0; */
   position: absolute;
   bottom: 50%;
   margin-bottom: 35px;
@@ -389,18 +389,26 @@ nav {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  padding: 0 20px;
 }
-.flex-testimonials > div {
+.testimonials {
   flex-basis: 50%;
+  text-align: justify;
 }
 .grid-testimonial {
   display: grid;
   grid-template-columns: 20% 80%;
   text-align: left;
 }
-.flex-pricing {
-  display: flex;
-  flex-wrap: wrap;
+.pricing-container {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.grid-pricing {
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   text-align: center;
 }
@@ -782,9 +790,6 @@ footer li a {
 }
 
 @media only screen and (max-width: 1054px) {
-  .content-width {
-    margin: 0 20px;
-  }
   /*Header*/
   .bars-icon {
     font-size: 30px;
@@ -858,11 +863,32 @@ footer li a {
     margin: 0 auto;
   } */
 
+  /*Testimonials*/
+  .flex-testimonials {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+  .testimonials-container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .testimonials {
+    flex-basis: 100%;
+  }
+
+  /*Pricing*/
+  .grid-pricing {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pricing-container {
+    max-width: 720px;
+  }
 
 
 
 
-  .branding, .flex-laptop, #testimonials, #contact, #pricing, footer {
+  .branding, .flex-laptop, #contact, footer {
     display: none;
   }
 }
