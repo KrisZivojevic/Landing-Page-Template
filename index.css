@@ -150,6 +150,7 @@ nav {
 }
 .nav-mobile {
   min-width: 270px;
+  min-height: 100vh;
   background-color: #fff;
   position: absolute;
   left: -40px;
@@ -788,7 +789,9 @@ footer li a {
   display: block;
   margin-left: 35px;
 }
-
+#map {
+  display: none;
+}
 @media only screen and (max-width: 1054px) {
   /*Header*/
   .bars-icon {
@@ -884,11 +887,54 @@ footer li a {
   .pricing-container {
     max-width: 720px;
   }
+  /*Branding*/
+  .branding {
+    padding: 40px 0;
+  }
+  .mr-50 {
+    margin-right: 0;
+  }
+  .branding h3 {
+    font-size: 30px;
+  }
+  .branding .btn {
+    display: block;
+    margin: 30px auto 0;
+  }
+  /*Contact us*/
+  .flex-contactus {
+    flex-direction: column;
+    max-width: 720px;
+    padding: 80px 20px 0;
+  }
+  #contact .btn {
+    margin-bottom: 80px;
+  }
+  /*Footer*/ 
+  .grid-footer {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  footer {
+    padding: 90px 50px 50px;
+  }
+  footer .center {
+    text-align: left;
+  }
+  .grid-quick-links {
+    column-gap: 25px;
+}
+/*Nav bar*/
+  .nav-mobile {
+    min-width: 200px;
+    font-size: 26px;
+  }
 
 
 
 
-  .branding, .flex-laptop, #contact, footer {
+
+ .flex-laptop {
     display: none;
   }
 }
