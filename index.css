@@ -686,7 +686,7 @@ nav {
 .flex-contactus {
   display: flex;
   /* grid-template-columns: repeat(2, 1fr); */
-  padding: 80px 0px;
+  padding: 80px 20px;
 }
 .flex-contactus > form, .flex-contactus > div {
   flex-basis: 50%;
@@ -731,7 +731,7 @@ nav {
 }
 footer {
   background-color: #29293a;
-  padding: 90px 0px 50px;
+  padding: 90px 20px;
   font-family: 'Work Sans';
 }
 .grid-footer {
@@ -745,18 +745,19 @@ footer {
   row-gap: 15px;
   column-gap: 30px;
 }
-.grid-quick-links a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 16px;
-  transition: .5s;
-}
 .grid-footer ul a {
   text-decoration: none;
   color: #aeb1be;
   font-size: 16px;
   font-family: 'Work Sans';
   transition: .5s;
+}
+.grid-quick-links ul a {
+  color: #fff;
+  margin-top: 8px;
+}
+.contact-information a {
+  margin-left: 35px;
 }
 .grid-quick-links a:hover {
   color: #aeb1be;
@@ -787,7 +788,7 @@ footer li > .icon {
 }
 footer li a {
   display: block;
-  margin-left: 35px;
+  /* margin-left: 35px; */
 }
 #map {
   display: none;
@@ -940,14 +941,100 @@ footer li a {
 }
 
 @media only screen and (max-width: 768px) {
-  .grid-services {
-    grid-template-columns: 1fr;
+
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  .banner-image {
+    height: 450px;
+  }
+  .max-w {
+    max-width: 550px;
+  }
+  .content-width {
+    max-width: 550px;
+    margin: 0 auto;
   }
   .bars-icon {
     font-size: 30px;
     display: block;
   }
+
+  /*Services*/
+  .grid-services {
+    grid-template-columns: 1fr;
+    padding: 0 60px;
+  }
+  /*About us*/
+  .img-about-us {
+    height: 368px;
+    width: 540px;
+  }
+  /*Team*/
+  .flex-team {
+    max-width: 500px;
+    gap: 1px;
+    justify-content: center;
+  }
+  .flex-team img, .flex-team .figure::before {
+    width: 100%;
+    height: 100%;
+  }
+  /*About us*/
+  .flex-about-us {
+    max-width: 500px;
+  }
+  .flex-about-us > div, .flex-about-us > article {
+    flex-basis: 100%;
+  }
+  /*Testimonials*/
+  iframe {
+    height: 250px;
+  }
+  /*Pricing*/
+  .grid-pricing {
+    grid-template-columns: 1fr;
+  }
+  /*Branding*/
+  .branding h3 {
+    font-size: 24px;
+  }
+  /*Contact us*/
+  .form-title {
+    font-size: 24px;
+  }
+  .grid-form {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "firstname"
+      "firstname-input"
+      "lastname"
+      "lastname-input"
+      "email"
+      "email-input"
+      "phone"
+      "phone-input"
+      "message"
+      "message-textarea";
+  }
+  /*Footer*/
+  .grid-quick-links {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
   
+
+
+
+  .flex-laptop {
+    display: none;
+  }
 }
 
 
