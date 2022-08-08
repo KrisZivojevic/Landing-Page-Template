@@ -986,6 +986,13 @@ footer li a {
     width: 100%;
     height: 100%;
   }
+  .flex-team .figure {
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  .team-member-name {
+    font-size: 18px;
+  }
   /*About us*/
   .flex-about-us {
     max-width: 500px;
