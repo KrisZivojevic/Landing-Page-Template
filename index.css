@@ -179,58 +179,41 @@ nav {
   opacity: 1;
   transform: translateX(0); /*or transform: none*/
 }
-.swiper-bullet {
-  display: flex;
-  justify-content: center;
-}
-.swiper-bullet span {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  /* background-color: #16986f; */
-  color: #29293a;
-  text-align: center;
-  line-height: 32px;
-  margin: 20px 10px;
-  transition: 0.5s;
-  
-}
-.bullet {
-  position: relative;
-}
-.bullet input {
-  position: absolute;
-  width: 27px;
-  height: 27px;
-  opacity: 0;
-  z-index: 2;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 24%;
-  cursor: pointer;
-}
-.bullet img {
+.slider {
   width: 100%;
-  height: 600px;
-  object-fit: cover;
-  /* opacity: 0; */
+  height: 650px;
+  position: relative;
+  overflow: hidden; /*ako je nesto iza mojih granica, nece se videti*/
+}
+.slider__slide {
+  width: 100%;
   position: absolute;
-  bottom: 50%;
-  margin-bottom: 35px;
+  transition: all 0.5s;
 }
-.bullet-02 ~ img {
-  left: -1412%;
+.slider__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.bullet-03 ~ img {
-  left: -1512%;
+.slider__button {
+  position: absolute;
+  bottom: 200px;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+  background-color: #f5f6fa;
+  font-size: 12px;
+  transform: scale(1.1);
 }
-#swiper input:checked ~ span {
-  color: #f5f6fa;
-  background-color: #16986f;
+.slider__button--prev {
+  left: 2%;
 }
-#swiper input.bullet-02:checked ~ img, #swiper input.bullet-03:checked ~ img {
-  opacity: 1;
+.slider__button--next {
+  right: 2%;
 }
 .dot {
   display: inline-block;
@@ -321,26 +304,14 @@ nav {
   padding-left: 30px;
   padding-right: 30px;
 }
-/* @TODO refactor to flexbox */
-/* .grid {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  grid-column-gap: 10px;
-  height: 100px;
-} */
+
 .flex {
   display: flex;
   justify-content: space-around;
   height: 100px;
   align-items: center;
 }
-.banner-image {
-  background-image: url(/assets/marketing.jpg);
-  height: 660px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .center {
   text-align: center;
 }

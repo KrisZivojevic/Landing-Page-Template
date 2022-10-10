@@ -14,32 +14,13 @@
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="index.css">
-  <!-- <link rel="stylesheet" href="index2.css"> -->
-  <!--         za pokazivanje stilova index2.css otkomentarisati linije 10, 16, 17, 29 i zakomentarisati liniju 9          -->
-  <script>
-    function onError(inputId, errorId) {
-      const field= document.getElementById(inputId);
-      const errorMessage = document.getElementById(errorId);
-            
-      if (field.value === "") {
-        errorMessage.style.opacity = 1;
-        field.style.border = "red solid 1px";
-      } else {
-        errorMessage.style.opacity = 0;
-        field.style.border = "solid 1px #c5c6cd";
-      }
-    }
-  </script>
 </head>
 
 <body>
   <div class="container">
     <header class="header">
-      <!-- <nav class="center"> -->
-      <!-- <img src="logo.png" class="d-inline img-logo showTagBox left ml-20"> -->
       <div class="flex content-width">
         <div id="menu" class="bars-icon">
-          <!-- <i class="fas fa-bars"></i> -->
           <input type="checkbox">
           <span></span>
           <span></span>
@@ -67,31 +48,23 @@
           <li class="d-inline"><a href="#contact" class="nav-link">Contact us</a></li>
         </ul>
       </div>
-      <!-- </nav> -->
-      
-        
-      
     </header>
     <main>
-      <div id="home" class="banner-image"></div>
+      <div class="slider">
+        <div class="slider__slide">
+          <img src="./assets/marketing1.jpg" alt="marketing1">
+        </div>
+        <div class="slider__slide">
+          <img src="./assets/marketing2.jpg" alt="marketing2">
+        </div>
+        <div class="slider__slide">
+          <img src="./assets/marketing3.jpg" alt="marketing3">
+        </div>
 
-      <div id="swiper" class="swiper-bullet">
-        <div class="bullet">
-          <input type="radio" name="bullet" class="bullet-01" checked>
-          <span>01</span>
-        </div>
-        <div class="bullet">
-          <input type="radio" name="bullet" class="bullet-02">
-          <span>02</span>
-          <img src="/assets/laptop1.jpg" alt="laptop">
-        </div>
-        <div class="bullet">
-          <input type="radio" name="bullet" class="bullet-03">
-          <span>03</span>
-          <img src="/assets/laptop2.jpg" alt="laptop">
-        </div>
+        <button class="slider__button slider__button--prev">Prev</button>
+        <button class="slider__button slider__button--next">Next</button>
+
       </div>
-
       <div id="services">
         <h3 class="h3-style center mt-50">
           Our Services
@@ -204,24 +177,6 @@
             <span class="team-member-name figcaption">Nathan Porter</span>
             <span class="position-title figcaption">CEO, Founder</span>
           </div class="figure">
-          <!-- <div class="img-team-person1">
-            <div class="text-bottom-left">
-              <p>Jean Thompson</p>
-              <p>PR Manager</p>
-            </div>
-          </div>
-          <div class="img-team-person2">
-            <div class="text-bottom-left">
-              <p>Brian Payne</p>
-              <p>Marketing Expert</p>
-            </div>
-          </div>
-          <div class="img-team-person3">
-            <div class="text-bottom-left">
-              <p>Nathan Porter</p>
-              <p>CEO, Founder</p>
-            </div>
-          </div> -->
         </div>
         <button type="button" class="btn d-inline">View All Team</button>
       </section>
@@ -232,8 +187,10 @@
             <div class="testimonials">
               <i class="fa fa-quote-left i-style"></i>
               <p class="my-20 text">
-                Profilab is, hands down, one of the best companies that we have worked with! The company has either met or
-                exceeded all of the goals that we initially set for all of the projects that they implemented for us. I am
+                Profilab is, hands down, one of the best companies that we have worked with! The company has either met
+                or
+                exceeded all of the goals that we initially set for all of the projects that they implemented for us. I
+                am
                 sure that our company will partner with them again in the future.
               </p>
               <div class="grid-testimonial">
@@ -257,23 +214,22 @@
                 <span></span>
               </div>
             </div>
-            <!-- <div class="iframe"> -->
-              <iframe width="460" height="315" src="https://www.youtube.com/embed/QZzbm-FrkGk"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <!-- </div> -->
+            <iframe width="460" height="315" src="https://www.youtube.com/embed/QZzbm-FrkGk"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
         </div>
       </section>
-      
+
       <section id="pricing" class="py-80">
         <header class="mb-80">
           <h3 class="h3-style center">
             Pricing
           </h3>
           <p class="services center max-w">
-            In this section, you can learn more about available pricing plans and included services. Even if you own a small
+            In this section, you can learn more about available pricing plans and included services. Even if you own a
+            small
             business and don't need big marketing campaign, we have what to offer.
           </p>
         </header>
@@ -382,12 +338,12 @@
                   <label class="message" for="message">Your Message</label>
                   <small class="error-msg" id="message-error">The text field is required.</small>
                 </div>
-                <textarea id="message" onblur="onError('message', 'message-error')" name="message" rows="8" cols="50"></textarea>
+                <textarea id="message" onblur="onError('message', 'message-error')" name="message" rows="8"
+                  cols="50"></textarea>
               </div>
             </div>
-              <button type="button" class="btn">Send Message</button>
+            <button type="button" class="btn">Send Message</button>
           </form>
-          <!-- <img src="location.jpg" alt="laptop" width="100%"> -->
           <div id="map" style="width: 100%; height: 100%">
 
           </div>
@@ -487,28 +443,94 @@
   </div>
   <script>
     function myMap() {
-      const noviSad = { 
+      const noviSad = {
         lat: 45.249143246746975,
         lng: 19.788080669285485
-        };
-        let latLong = new google.maps.LatLng(noviSad.lat, noviSad.lng); 
+      };
+      let latLong = new google.maps.LatLng(noviSad.lat, noviSad.lng);
 
-        console.log(noviSad.lat);
-        let mapProp = {
-          center: latLong,
-          zoom: 16,
-          mapTypeId: 'roadmap' /*roadmap, satellite*/
-        };
-        let map = new google.maps.Map(document.getElementById("map"), mapProp);
+      console.log(noviSad.lat);
+      let mapProp = {
+        center: latLong,
+        zoom: 16,
+        mapTypeId: 'roadmap' /*roadmap, satellite*/
+      };
+      let map = new google.maps.Map(document.getElementById("map"), mapProp);
 
-        const marker = new google.maps.Marker({
-          position: latLong,
-          map: map
-        })
+      const marker = new google.maps.Marker({
+        position: latLong,
+        map: map
+      })
 
+    }
+  </script>
+  <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCU-RGEySiEbtE2bKCrAB15vRcRHpkPggA&callback=myMap"></script>
+
+
+  <script>
+      function onError(inputId, errorId) {
+        const field = document.getElementById(inputId);
+        const errorMessage = document.getElementById(errorId);
+  
+        if (field.value === "") {
+          errorMessage.style.opacity = 1;
+          field.style.border = "red solid 1px";
+        } else {
+          errorMessage.style.opacity = 0;
+          field.style.border = "solid 1px #c5c6cd";
         }
-    </script>
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCU-RGEySiEbtE2bKCrAB15vRcRHpkPggA&callback=myMap"></script>
+      }
+  
+      //Select all slides
+      const slides = document.querySelectorAll('.slider__slide');
+  
+      //Loop through slides and set each slide
+      for (let i = 0; i < slides.length; i++) {
+        const slide = slides[i];
+        slide.style.transform = `translateX(${i * 100}%)`;
+      }
+  
+      //Current slider counter
+      let currSlide = 0;
+      let maxSlide = slides.length - 1;
+  
+      //Select buttons
+      const prev = document.querySelector('.slider__button--prev');
+      const next = document.querySelector('.slider__button--next');
+  
+      next.addEventListener('click', function() {
+        //check if current slide is the last and reset current slide
+        if (currSlide == maxSlide) {
+          currSlide = 0;
+        } else {
+          currSlide++;
+        }
+        for (let i = 0; i < slides.length; i++) {
+          const slide = slides[i];
+          slide.style.transform = `translateX(${100 * (i - currSlide)}%)`;
+        }
+      });
+  
+      prev.addEventListener('click', function() {
+        console.log(maxSlide, currSlide);
+
+        if (currSlide == maxSlide) {
+          currSlide = 0;
+        } else {
+          currSlide++;
+        }
+        for (let i = 0; i < slides.length; i++) {
+          const slide = slides[i];
+          slide.style.transform = `translateX(${-(100 * (i - currSlide))}%)`;
+        }
+      })
+  
+        
+  
+  
+  
+  </script>
 </body>
 
 </html>
