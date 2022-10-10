@@ -65,7 +65,7 @@ nav {
   z-index: 1;
 }
 .header-logo {
-  background-image: url(/assets/logo.png);
+  background-image: url(./docs/assets/logo.png);
   background-position: center;
   background-repeat: no-repeat;
   width: 190px;
@@ -389,7 +389,7 @@ nav {
   font-family: 'Work sans';
 }
 .img-about-us {
-  background-image: url(/assets/about.jpg);
+  background-image: url(./docs/assets/about.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -440,7 +440,7 @@ nav {
   /* width: 270px;
   height: 350px;*/
   margin: 10px auto;
-  background-image: url(/assets/person1.jpg);
+  background-image: url(./docs/assets/person1.jpg);
   height: 350px;
   width: 270px;
   background-position: center;
@@ -453,7 +453,7 @@ nav {
   /* width: 270px;
   height: 350px;*/
   margin: 10px auto;
-  background-image: url(/assets/person2.jpg);
+  background-image: url(./docs/assets/person2.jpg);
   height: 350px;
   width: 270px;
   background-position: center;
@@ -466,7 +466,7 @@ nav {
   /* width: 270px;
   height: 350px;*/
   margin: 10px auto;
-  background-image: url(/assets/person3.jpg);
+  background-image: url(./docs/assets/person3.jpg);
   height: 350px;
   width: 270px;
   background-position: center;
