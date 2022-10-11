@@ -377,8 +377,6 @@ nav {
   margin: 0 auto;
 }
 .grid-pricing {
-  /* display: flex;
-  flex-wrap: wrap; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
@@ -437,8 +435,6 @@ nav {
   opacity: 1;
 }
 .img-team-person1 {
-  /* width: 270px;
-  height: 350px;*/
   margin: 10px auto;
   background-image: url(./docs/assets/person1.jpg);
   height: 350px;
@@ -450,8 +446,6 @@ nav {
   border-radius: 5px;
 }
 .img-team-person2 {
-  /* width: 270px;
-  height: 350px;*/
   margin: 10px auto;
   background-image: url(./docs/assets/person2.jpg);
   height: 350px;
@@ -463,8 +457,6 @@ nav {
   border-radius: 5px;
 }
 .img-team-person3 {
-  /* width: 270px;
-  height: 350px;*/
   margin: 10px auto;
   background-image: url(./docs/assets/person3.jpg);
   height: 350px;
@@ -547,9 +539,6 @@ nav {
 .iframe {
   margin: 0px auto;
 }
-/* .testimonials {
-  margin: 0px auto;
-} */
 .text-testimonials {
   padding: 0px 10px;
   margin: auto 0px;
@@ -656,7 +645,6 @@ nav {
 }
 .flex-contactus {
   display: flex;
-  /* grid-template-columns: repeat(2, 1fr); */
   padding: 80px 20px;
 }
 .flex-contactus > form, .flex-contactus > div {
@@ -759,7 +747,6 @@ footer li > .icon {
 }
 footer li a {
   display: block;
-  /* margin-left: 35px; */
 }
 #map {
   display: none;
@@ -834,10 +821,6 @@ footer li a {
     flex: 0 0 50%;
     padding: 15px;
   }
-  /* #team.content-width {
-    margin: 0 auto;
-  } */
-
   /*Testimonials*/
   .flex-testimonials {
     flex-wrap: wrap;
