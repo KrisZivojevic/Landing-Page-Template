@@ -181,7 +181,7 @@ nav {
 }
 .slider {
   width: 100%;
-  height: 600pxgit status;
+  height: 600px;
   position: relative;
   overflow: hidden; /*ako je nesto iza mojih granica, nece se videti*/
 }
